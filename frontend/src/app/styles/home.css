@@ -1,0 +1,183 @@
+/* Ajustes finais para corrigir o layout e ocupar toda a largura da tela */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100vh; /* Garante que o corpo ocupe exatamente a altura da viewport */
+  overflow: auto; /* Permite o scroll automático quando necessário */
+}
+
+.header {
+  width: 100%;
+  background-color: #6a1b9a;
+  display: flex; /* Altere para flexbox para facilitar o posicionamento */
+  align-items: center;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  padding: 15px 20px; /* Ajuste de espaçamento interno */
+  color: white;
+  font-size: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header .home-link {
+  position: absolute; /* Posiciona o link "Home" à esquerda */
+  left: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+
+.home-link {
+  position: absolute;
+  left: 20px;
+}
+
+.home-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.header .title {
+  font-size: 22px;
+  font-weight: bold;
+}
+.menu-container{
+  flex-direction: row;
+}
+
+.main-content {
+  flex: 1; /* Permite que o conteúdo principal ocupe o espaço restante */
+  width: 100vw; /* Garante que o container ocupe toda a largura da viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  justify-content: space-between; /* Garante espaçamento adequado entre os elementos */
+}
+
+.main-image {
+  margin: 0; /* Remove qualquer margem */
+  padding: 0; /* Remove qualquer padding */
+  width: 100vw; /* Força a largura total da viewport */
+  height: 40vh; /* Mantém a altura proporcional */
+  object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorção */
+  display: block; /* Garante que a imagem seja exibida */
+  position: relative; /* Garante que o elemento respeite o fluxo do layout */
+}
+
+.menu {
+  width: 80%; /* Reduzido para criar um efeito de centralização */
+  display: flex;
+  justify-content: space-between; /* Centraliza os itens horizontalmente */
+  align-items: center;
+  background-color: #6a1b9a;
+  padding: 20px; /* Espaçamento interno */
+  margin: 20px auto; /* Adiciona espaço entre o menu e o "Quem Nós Somos" */
+  border-radius: 20px; /* Bordas mais arredondadas */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Sombra mais suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animações suaves */
+}
+
+.menu:hover {
+  transform: scale(1.03); /* Leve aumento ao passar o mouse */
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+}
+
+.submenu {
+  display: flex;
+  flex-direction: column; /* Organiza o texto e o botão verticalmente */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  justify-content: space-between; /* Centraliza os itens verticalmente */
+  margin-bottom: 20px; /* Espaçamento entre submenus */
+  gap: 10px;
+}
+
+.submenu p {
+  font-size: 16px; /* Tamanho da fonte do texto */
+  color: #ffffff; /* Cor do texto ajustada para branco */
+  margin-bottom: 10px; /* Espaçamento entre o texto e o botão */
+  text-align: center; /* Centraliza o texto */
+  justify-content: space-between; /* Centraliza os itens verticalmente */
+  gap: 10px;
+}
+
+button {
+  background-color: #6a1b9a; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Remove bordas */
+  border-radius: 10px; /* Bordas arredondadas */
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Animações suaves */
+}
+
+button:hover {
+  background-color: #7b1fa2; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+button:active {
+  transform: scale(0.95); /* Leve redução ao clicar */
+}
+
+.menu-button {
+  width: auto; /* Ajusta a largura do botão ao conteúdo */
+  padding: 12px 25px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  font-weight: bold; /* Texto em negrito */
+  color: #ffffff; /* Cor do texto */
+  background-color: #6a1b9a; /* Cor de fundo */
+  border: none; /* Remove bordas */
+  border-radius: 8px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Animações suaves */
+}
+
+.menu-button:hover {
+  background-color: #7b1fa2; /* Cor ao passar o mouse */
+  transform: scale(1.05); /* Leve aumento */
+}
+
+.menu-button:active {
+  transform: scale(0.95); /* Leve redução ao clicar */
+}
+
+.about-us {
+  text-align: center;
+  margin: 20px auto; /* Adiciona espaço entre o "Quem Nós Somos" e o header/menu */
+  padding: 15px;
+  width: 90%; /* Aumenta a largura do contêiner */
+  background-color: #f9f9f9; /* Fundo claro */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  position: relative; /* Garante que o elemento respeite o fluxo do layout */
+  display: flex; /* Usa Flexbox para centralizar */
+  flex-direction: column; /* Organiza os itens verticalmente */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  justify-content: center; /* Centraliza os itens verticalmente */
+}
+
+.about-us h2 {
+  color: #6a1b9a; /* Cor do título */
+  font-size: 28px; /* Aumenta o tamanho do título */
+  margin-bottom: 15px; /* Aumenta o espaçamento inferior */
+}
+
+.about-us p {
+  color: #333; /* Cor do texto */
+  font-size: 18px; /* Aumenta o tamanho do texto */
+  line-height: 1.8; /* Aumenta o espaçamento entre linhas */
+}

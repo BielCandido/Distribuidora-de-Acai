@@ -1,0 +1,73 @@
+.pedido-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.pedido-form {
+  width: 90%;
+  max-width: 500px;
+  background-color: #ffffff; /* Fundo branco */
+  padding: 20px;
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.pedido-form h2 {
+  text-align: center;
+  color: #6a1b9a; /* Cor do título */
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.form-group select:focus {
+  border-color: #6a1b9a; /* Cor de foco */
+  outline: none;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #6a1b9a; /* Cor de fundo */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #7b1fa2; /* Cor ao passar o mouse */
+  transform: scale(1.05); /* Leve aumento */
+}
+
+.submit-button:active {
+  transform: scale(0.95); /* Leve redução ao clicar */
+}
