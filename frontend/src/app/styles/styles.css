@@ -1,0 +1,5 @@
+body {
+    /* ...existing code... */
+    overflow: auto; /* Permite o scroll automático quando necessário */
+    /* ...existing code... */
+}
