@@ -16,15 +16,15 @@
 <!-- Descrever e limitar o escopo da aplicação. -->
 ### 2. Escopo
 
-  O sistema oferecerá as seguintes funcionalidades:
+  - O sistema oferecerá as seguintes funcionalidades:
 
-    Permitir que o usuário crie um pedido e visualize seu valor.
+  - Permitir que o usuário crie um pedido e visualize seu valor.
 
-    Criar uma página administrativa de relatório com as seguintes opções:
+  - Criar uma página administrativa de relatório com as seguintes opções:
 
-      Visualização de todos os pedidos.
+    - Visualização de todos os pedidos.
 
-      Cancelamento de pedidos.
+    - Cancelamento de pedidos.
 
 
 <!-- Apresentar restrições de funcionalidades e de escopo. -->
@@ -32,12 +32,11 @@
 
   Neste trabalho, não serão considerados:
 
-    Integração com meios de pagamento online.
+  - Integração com meios de pagamento online.
 
-    Uso de ORMs para manipulação do banco de dados.
+  - Uso de ORMs para manipulação do banco de dados.
 
-    Cadastro e login de usuários: atualmente, o sistema não possui controle de autenticação para diferenciar     
-    usuários comuns e administradores. Essa funcionalidade está nos planos futuros e poderá ser implementada em 
+  - Cadastro e login de usuários: atualmente, o sistema não possui controle de autenticação para diferenciar         usuários comuns e administradores. Essa funcionalidade está nos planos futuros e poderá ser implementada em 
     versões seguintes do sistema.
 
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
